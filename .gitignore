@@ -13,6 +13,9 @@ media/
 
 # Secrets — NEVER commit these
 .env
+.env.*
+!.env.example
+!.env.docker.example
 *.key
 
 # Node

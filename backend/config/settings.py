@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-$r1)4j*e&py6)b6!r0324p8na9$g$^89+7jy(hvp6d#q7guqfg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '*').split(',') if os.getenv('ALLOWED_HOSTS') else ['*']
 
 
 # Application definition
@@ -94,12 +94,24 @@ MIDDLEWARE = [
 
 # Only allow your frontend origin
 CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
 ]
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+]
+
 # For local development
-BASE_URL = "http://localhost:8000"
-FRONTEND_URL = "http://localhost:5173"
+BASE_URL = os.getenv("BASE_URL", "http://localhost:8000")
+FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:3000")
 
 # Must allow credentials for cookies/auth
 CORS_ALLOW_CREDENTIALS = True
@@ -158,6 +170,8 @@ TEMPLATES = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
@@ -170,11 +184,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sparkler_db',
-        'USER': 'postgres',
-        'PASSWORD': 'jinadhi',
-        'HOST': 'localhost',
-        'PORT': '5432'
+        'NAME': os.getenv('DB_NAME', 'sparkler_db'),
+        'USER': os.getenv('DB_USER', 'postgres'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'jinadhi'),
+        'HOST': os.getenv('DB_HOST', 'localhost'),
+        'PORT': os.getenv('DB_PORT', '5432')
     }
 }
 

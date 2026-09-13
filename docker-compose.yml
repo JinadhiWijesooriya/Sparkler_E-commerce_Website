@@ -1,0 +1,63 @@
+services:
+  # -------------------------------------------------------------
+  # PostgreSQL Database Service
+  # -------------------------------------------------------------
+  db:
+    image: postgres:16-alpine
+    container_name: sparkler_db
+    restart: always
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-sparkler_db}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-jinadhi}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-sparkler_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # -------------------------------------------------------------
+  # Django REST API Backend Service
+  # -------------------------------------------------------------
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: sparkler_backend
+    restart: always
+    env_file:
+      - .env.docker
+    ports:
+      - "8000:8000"
+    volumes:
+      - media_data:/app/media
+      - static_data:/app/staticfiles
+    depends_on:
+      db:
+        condition: service_healthy
+
+  # -------------------------------------------------------------
+  # React + Vite Frontend (Served by Nginx)
+  # -------------------------------------------------------------
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: sparkler_frontend
+    restart: always
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
+    driver: local
+  media_data:
+    driver: local
+  static_data:
+    driver: local
