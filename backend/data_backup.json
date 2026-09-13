@@ -1,0 +1,845 @@
+[
+  {
+    "model": "home.herosection",
+    "pk": 1,
+    "fields": {
+      "badge_text": "Luxury Gem & Jewelry Collection",
+      "title": "SPARKLER \u2014 Where Every Stone Tells a Story",
+      "subtitle": "Discover timeless gemstones and handcrafted jewelry designed to shine with your moments, your milestones, and your magic.",
+      "background_image": "hero/herobanner_Sguzl0D.png",
+      "is_active": true
+    }
+  },
+  {
+    "model": "home.feature",
+    "pk": 1,
+    "fields": {
+      "title": "High-Value & Capital Intensive",
+      "is_active": true
+    }
+  },
+  {
+    "model": "home.feature",
+    "pk": 2,
+    "fields": {
+      "title": "Labour-Intensive & Skill-Based",
+      "is_active": true
+    }
+  },
+  {
+    "model": "home.feature",
+    "pk": 3,
+    "fields": {
+      "title": "Highly Fragmented",
+      "is_active": true
+    }
+  },
+  {
+    "model": "home.feature",
+    "pk": 4,
+    "fields": {
+      "title": "Export-Oriented",
+      "is_active": true
+    }
+  },
+  {
+    "model": "home.collection",
+    "pk": 2,
+    "fields": {
+      "name": "DIAMOND COLLECTION",
+      "image": "collections/DIAMOND_COLLECTION.jpeg",
+      "slug": "DIAMOND",
+      "is_featured": true
+    }
+  },
+  {
+    "model": "home.collection",
+    "pk": 3,
+    "fields": {
+      "name": "RUBY COLLECTION",
+      "image": "collections/RUBY_COLLECTION.jpeg",
+      "slug": "RUBY",
+      "is_featured": true
+    }
+  },
+  {
+    "model": "home.collection",
+    "pk": 4,
+    "fields": {
+      "name": "EMERALD COLLECTION",
+      "image": "collections/EMERALD_COLLECTION.jpeg",
+      "slug": "EMERALD",
+      "is_featured": true
+    }
+  },
+  {
+    "model": "home.collection",
+    "pk": 5,
+    "fields": {
+      "name": "SAPPHIRE COLLECTION",
+      "image": "collections/SAPPHIRE_COLLECTION.jpeg",
+      "slug": "SAPPHIRE",
+      "is_featured": true
+    }
+  },
+  {
+    "model": "home.customjewelrycta",
+    "pk": 1,
+    "fields": {
+      "title": "Customize Your  jewelry",
+      "subtitle": "Customize Your  jewelry as your wish",
+      "background_image": "cta/custom_jewelry.png",
+      "is_active": true
+    }
+  },
+  {
+    "model": "home.advertisement",
+    "pk": 1,
+    "fields": {
+      "title": "Timeless Brilliance \ud83d\udc8e",
+      "description": "Discover jewelry that speaks elegance, power, and forever beauty. Crafted to shine as bright as you do.",
+      "image": "ads/ADVERTISEMENT_1.png",
+      "is_active": true
+    }
+  },
+  {
+    "model": "home.advertisement",
+    "pk": 2,
+    "fields": {
+      "title": "Wear Your Royalty \ud83d\udc51",
+      "description": "Luxury gemstones designed for bold personalities. Because ordinary is never enough.",
+      "image": "ads/ADVERTISEMENT_2.png",
+      "is_active": true
+    }
+  },
+  {
+    "model": "home.advertisement",
+    "pk": 3,
+    "fields": {
+      "title": "A Gift That Lasts Forever \ud83c\udf81",
+      "description": "Celebrate love, milestones, and memories with jewelry that tells your story.",
+      "image": "ads/ADVERTISEMENT_3.png",
+      "is_active": true
+    }
+  },
+  {
+    "model": "home.product",
+    "pk": 1,
+    "fields": {
+      "name": "Royal Eclipse Diamond Ring",
+      "description": "A statement ring crafted in polished gold, featuring a brilliant-cut diamond designed to capture light from every angle. Elegant, bold, and timeless.",
+      "price": "12500.00",
+      "is_popular": true
+    }
+  },
+  {
+    "model": "home.product",
+    "pk": 2,
+    "fields": {
+      "name": "Emerald Aura Pendant",
+      "description": "A refined emerald gemstone pendant suspended on a delicate gold chain, radiating elegance and modern sophistication.",
+      "price": "15000.00",
+      "is_popular": true
+    }
+  },
+  {
+    "model": "home.product",
+    "pk": 3,
+    "fields": {
+      "name": "Midnight Sapphire Earrings",
+      "description": "Deep blue sapphire studs set in polished gold, designed for those who love bold luxury with a touch of mystery.",
+      "price": "10000.00",
+      "is_popular": true
+    }
+  },
+  {
+    "model": "home.productimage",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "image": "products/Diamond_Ring.png"
+    }
+  },
+  {
+    "model": "home.productimage",
+    "pk": 2,
+    "fields": {
+      "product": 1,
+      "image": "products/EMERALD_COLLECTION.jpeg"
+    }
+  },
+  {
+    "model": "home.productimage",
+    "pk": 3,
+    "fields": {
+      "product": 1,
+      "image": "products/RUBY_COLLECTION.jpeg"
+    }
+  },
+  {
+    "model": "home.productimage",
+    "pk": 4,
+    "fields": {
+      "product": 2,
+      "image": "products/Aura_Pendant.png"
+    }
+  },
+  {
+    "model": "home.productimage",
+    "pk": 5,
+    "fields": {
+      "product": 2,
+      "image": "products/EMERALD_COLLECTION_cF554dq.jpeg"
+    }
+  },
+  {
+    "model": "home.productimage",
+    "pk": 6,
+    "fields": {
+      "product": 2,
+      "image": "products/RUBY_COLLECTION_p6sX40u.jpeg"
+    }
+  },
+  {
+    "model": "home.productimage",
+    "pk": 7,
+    "fields": {
+      "product": 3,
+      "image": "products/Sapphire_Earrings.png"
+    }
+  },
+  {
+    "model": "home.productimage",
+    "pk": 8,
+    "fields": {
+      "product": 3,
+      "image": "products/SAPPHIRE_COLLECTION.jpeg"
+    }
+  },
+  {
+    "model": "home.productimage",
+    "pk": 9,
+    "fields": {
+      "product": 3,
+      "image": "products/EMERALD_COLLECTION_VO4XTRm.jpeg"
+    }
+  },
+  {
+    "model": "shop.shophero",
+    "pk": 1,
+    "fields": {
+      "title": "Explore Our Gemstone Collection",
+      "subtitle": "Discover timeless elegance in every handcrafted piece of jewelry",
+      "background_image": "shop/hero/shop_banner.png",
+      "created_at": "2026-01-29T18:25:33.324Z"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 1,
+    "fields": {
+      "name": "necklace",
+      "description": "Gemstone necklaces feature precious (diamond, emerald, ruby, sapphire) or semi-precious stones (amethyst, citrine, peridot) set in metals like 14kt-18kt gold, platinum, or sterling silver. Designs range from delicate, minimalist daily wear to elaborate, multi-stone, or beaded styles for occasions, often incorporating, oval, mixed, or round cuts. \r\n\r\nGemstone necklaces feature precious (diamond, emerald, ruby, sapphire) or semi-precious stones (amethyst, citrine, peridot) set in metals like 14kt-18kt gold, platinum, or sterling silver. Designs range from delicate, minimalist daily wear to elaborate, multi-stone, or beaded styles for occasions, often incorporating, oval, mixed, or round cuts. \r\n\r\nGemstone necklaces feature precious (diamond, emerald, ruby, sapphire) or semi-precious stones (amethyst, citrine, peridot) set in metals like 14kt-18kt gold, platinum, or sterling silver. Designs range from delicate, minimalist daily wear to elaborate, multi-stone, or beaded styles for occasions, often incorporating, oval, mixed, or round cuts. \r\nGemstone necklaces feature precious (diamond, emerald, ruby, sapphire) or semi-precious stones (amethyst, citrine, peridot) set in metals like 14kt-18kt gold, platinum, or sterling silver. Designs range from delicate, minimalist daily wear to elaborate, multi-stone, or beaded styles for occasions, often incorporating, oval, mixed, or round cuts.",
+      "price": "60000.00",
+      "gem": "Sapphire",
+      "carat": "1.00",
+      "metal": "Gold",
+      "certification": true,
+      "availability": true,
+      "created_at": "2026-01-28T05:03:18.634Z"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 2,
+    "fields": {
+      "name": "Celestial Diamond Pendant",
+      "description": "A delicate gold pendant featuring a flawless diamond, designed to capture light from every angle. Timeless elegance for any occasion.",
+      "price": "20000.00",
+      "gem": "Sapphire",
+      "carat": "1.00",
+      "metal": "Gold",
+      "certification": true,
+      "availability": true,
+      "created_at": "2026-01-29T18:28:36.118Z"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 3,
+    "fields": {
+      "name": "Emerald Envy Ring",
+      "description": "A stunning gold ring adorned with a vibrant emerald, symbolizing luxury and refined taste. Perfect for bold statements.",
+      "price": "15000.00",
+      "gem": "Emerald",
+      "carat": "1.00",
+      "metal": "Silver",
+      "certification": true,
+      "availability": true,
+      "created_at": "2026-01-29T18:29:55.814Z"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 4,
+    "fields": {
+      "name": "Midnight Sapphire Earrings",
+      "description": "Deep blue sapphire studs set in polished gold, perfect for adding a touch of elegance and mystery.",
+      "price": "20000.00",
+      "gem": "Sapphire",
+      "carat": "1.00",
+      "metal": "Platinum",
+      "certification": true,
+      "availability": true,
+      "created_at": "2026-01-29T18:31:04.088Z"
+    }
+  },
+  {
+    "model": "shop.productimage",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "image": "products/1000_F_61208183_9JGNnGiRZdLgzR1dhu4nYchRmYfWxPQw_b1lj8ya.jpg",
+      "alt_text": null
+    }
+  },
+  {
+    "model": "shop.productimage",
+    "pk": 2,
+    "fields": {
+      "product": 1,
+      "image": "products/1000_F_61208183_9JGNnGiRZdLgzR1dhu4nYchRmYfWxPQw.jpg",
+      "alt_text": null
+    }
+  },
+  {
+    "model": "shop.productimage",
+    "pk": 3,
+    "fields": {
+      "product": 1,
+      "image": "products/b962f4abfd8f241c30dr_X2bz4tP.png",
+      "alt_text": null
+    }
+  },
+  {
+    "model": "shop.productimage",
+    "pk": 4,
+    "fields": {
+      "product": 1,
+      "image": "products/Whisk_9f81dc48539040e883a4785c7f05902bdr.png",
+      "alt_text": null
+    }
+  },
+  {
+    "model": "shop.productimage",
+    "pk": 5,
+    "fields": {
+      "product": 2,
+      "image": "products/Whisk_0d7f5259c1eed798533448d1e6d3e4a2dr.png",
+      "alt_text": null
+    }
+  },
+  {
+    "model": "shop.productimage",
+    "pk": 6,
+    "fields": {
+      "product": 2,
+      "image": "products/ADVERTISEMENT_2.png",
+      "alt_text": null
+    }
+  },
+  {
+    "model": "shop.productimage",
+    "pk": 7,
+    "fields": {
+      "product": 3,
+      "image": "products/Whisk_276c4037a5c944383414cf4b5d1bfd7ddr.png",
+      "alt_text": null
+    }
+  },
+  {
+    "model": "shop.productimage",
+    "pk": 8,
+    "fields": {
+      "product": 3,
+      "image": "products/Whisk_c96e402cb0b355ca7b7471c8f10b6e55dr.png",
+      "alt_text": null
+    }
+  },
+  {
+    "model": "shop.productimage",
+    "pk": 9,
+    "fields": {
+      "product": 4,
+      "image": "products/Whisk_8c0af43be73f509881642481554ca79bdr.png",
+      "alt_text": null
+    }
+  },
+  {
+    "model": "shop.productimage",
+    "pk": 10,
+    "fields": {
+      "product": 4,
+      "image": "products/Whisk_16b897f7f1b077cbd44489416a814d3fdr.png",
+      "alt_text": null
+    }
+  },
+  {
+    "model": "shop_sets.product",
+    "pk": 1,
+    "fields": {
+      "name": "necklas set",
+      "description": "A necklace set is a coordinated collection of jewelry that typically includes a necklace and a pair of matching earrings, designed to be worn together to create a cohesive and polished look. Some sets may also include a matching bracelet or\r\n\r\n ringA necklace set is a coordinated collection of jewelry that typically includes a necklace and a pair of matching earrings, designed to be worn together to create a cohesive and polished look. Some sets may also include a matching bracelet or ringA necklace set is a coordinated collection of jewelry that typically includes a necklace and a pair of matching earrings, designed to be worn together to create a cohesive and polished look. Some sets may also include a matching bracelet or ringA necklace set is a coordinated collection of jewelry that typically includes a necklace and a pair of matching earrings, designed to be worn together to create a cohesive and polished look. Some sets may also include a matching bracelet or ringA necklace set is\r\n\r\n a coordinated collection of jewelry that typically includes a necklace and a pair of matching earrings, designed to be worn together to create a cohesive and polished look. Some sets may also include a matching bracelet or ringA necklace set i\r\n\r\ns a coordinated collection of jewelry that typically includes a necklace and a pair of matching earrings, designed to be worn together to create a cohesive and polished look. Some sets may also include a matching bracelet or ring",
+      "gem": "diamond",
+      "metal": "gold",
+      "price": "1500000.00",
+      "carat": "3.00",
+      "availability": "in_stock",
+      "image_main": "products/b962f4abfd8f241c30dr_RdBEkNz.png",
+      "image_secondary": "products/360_F_439499737_U723oDptPDtrkguj8pkKL9PvuLJvtRfD_VqPRvgA.jpg",
+      "created_at": "2026-01-29T15:32:39.790Z"
+    }
+  },
+  {
+    "model": "shop_sets.pageheroimage",
+    "pk": 1,
+    "fields": {
+      "title": "Discover Your Perfect Jewelry Set",
+      "subtitle": "Elegant rings, necklaces, and bracelets designed to shine together",
+      "background_image": "hero/Whisk_89081411a227b8baf1147cc99ebb2f8bdr.png",
+      "created_at": "2026-01-29T18:33:52.602Z"
+    }
+  },
+  {
+    "model": "gems.gemhero",
+    "pk": 1,
+    "fields": {
+      "title": "welcome   to Gem World",
+      "subtitle": "Come & Choose best Gem For You",
+      "background_image": "gems/hero/ring_LgRqca1.jpeg",
+      "created_at": "2026-03-03T16:40:41.252Z"
+    }
+  },
+  {
+    "model": "gems.gem",
+    "pk": 1,
+    "fields": {
+      "name": "Sapphire",
+      "gem_type": "Blue Sapphire",
+      "weight_carat": "2.00",
+      "shape": "Emerald Cut",
+      "color": "Blue",
+      "origin": "Ceylon",
+      "clarity": "kmkn",
+      "treatment": "Heat",
+      "dimensions": "10*8*5 mm",
+      "price": "25000.00",
+      "description": "(venv) PS C:\\Users\\Dinusha\\Desktop\\sparkler_web\\sparkler\\backend> python manage.py makemigrations gems\r\nNo changes detected in app 'gems'\r\n(venv) PS C:\\Users\\Dinusha\\Desktop\\sparkler_web\\sparkler\\backend> python manage.py migrate gems\r\nOperations to perform:\r\n  Apply all migrations: gems\r\nRunning migrations:\r\n  Applying gems.0001_initial... OK\r\n(venv) PS C:\\Users\\Dinusha\\Desktop\\sparkler_web\\sparkler\\backend>",
+      "certification": "GIC",
+      "availability": true,
+      "created_at": "2026-03-03T16:42:44.628Z"
+    }
+  },
+  {
+    "model": "gems.gemimage",
+    "pk": 2,
+    "fields": {
+      "gem": 1,
+      "image": "gems/products/SAPPHIRE_COLLECTION.jpeg",
+      "alt_text": null
+    }
+  },
+  {
+    "model": "gems.gemimage",
+    "pk": 3,
+    "fields": {
+      "gem": 1,
+      "image": "gems/products/ChatGPT_Image_Feb_22_2026_12_09_52_AM_G9HJFXX.png",
+      "alt_text": null
+    }
+  },
+  {
+    "model": "gems.gemimage",
+    "pk": 4,
+    "fields": {
+      "gem": 1,
+      "image": "gems/products/ChatGPT_Image_Feb_18_2026_09_14_27_AM_alzKJbt.png",
+      "alt_text": null
+    }
+  },
+  {
+    "model": "blog.herosection",
+    "pk": 1,
+    "fields": {
+      "title": "Insights & Stories from the World of Jewelry",
+      "subtitle": "Discover expert tips, gemstone trends, and luxury inspirations",
+      "image": "hero_images/Whisk_038ac5bf46b40f5a2124563fd0ab60cadr.png",
+      "created_at": "2026-01-29T18:41:22.950Z"
+    }
+  },
+  {
+    "model": "blog.article",
+    "pk": 1,
+    "fields": {
+      "title": "The Timeless Beauty of Emeralds: A Gem for Every Generation \ud83d\udc9a",
+      "category": "Gemstone Insights",
+      "description": "Discover the history, symbolism, and enduring appeal of emeralds, and learn why this precious gemstone remains a favorite among luxury jewelry lovers worldwide.",
+      "content": "Emeralds have fascinated humans for centuries with their rich green hues and captivating sparkle. Known as symbols of rebirth, love, and prosperity, these gemstones have adorned royalty and collectors alike. Modern craftsmanship combines traditional techniques with innovative designs, creating emerald jewelry that is both timeless and contemporary. From statement rings to delicate necklaces, emeralds continue to inspire jewelry designers and collectors alike. In this article, we explore the origins of emeralds, their significance across cultures, tips for selecting high-quality stones, and ideas for incorporating emeralds into your luxury jewelry collection.",
+      "featured_image": "blog_images/custom_jewelry.png",
+      "created_at": "2026-01-29T18:42:52.178Z"
+    }
+  },
+  {
+    "model": "blog.articleimage",
+    "pk": 1,
+    "fields": {
+      "article": 1,
+      "image": "blog_images/Whisk_89081411a227b8baf1147cc99ebb2f8bdr.png",
+      "caption": null
+    }
+  },
+  {
+    "model": "blog.articleimage",
+    "pk": 2,
+    "fields": {
+      "article": 1,
+      "image": "blog_images/Aura_Pendant.png",
+      "caption": null
+    }
+  },
+  {
+    "model": "blog.articleimage",
+    "pk": 3,
+    "fields": {
+      "article": 1,
+      "image": "blog_images/SAPPHIRE_COLLECTION.jpeg",
+      "caption": null
+    }
+  },
+  {
+    "model": "services.herosection",
+    "pk": 1,
+    "fields": {
+      "badge_text": "Our Expertise \ud83d\udc8e",
+      "title": "Exceptional Jewelry Services",
+      "subtitle": "Craftsmanship, personalization, and care tailored for your precious gems",
+      "background_image": "hero/Whisk_bc2107f795e703192954d40a11d16537dr.png",
+      "created_at": "2026-01-29T18:36:05.517Z",
+      "updated_at": "2026-01-29T18:36:05.517Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 1,
+    "fields": {
+      "title": "Jewelry Cleaning & Polishing",
+      "icon": "wrench",
+      "description": "Professional cleaning and polishing for diamonds, gemstones, and gold to restore shine and brilliance.",
+      "estimated_cost": "8000",
+      "video": "service_videos/WhatsApp_Video_2026-06-10_at_8.43.30_AM.mp4",
+      "created_at": "2026-01-29T18:38:06.582Z",
+      "updated_at": "2026-06-10T03:11:34.528Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 2,
+    "fields": {
+      "title": "Custom Jewelry Design",
+      "icon": "edit",
+      "description": "Bespoke design services to create unique, handcrafted pieces tailored to your style and vision.\r\nEstimated",
+      "estimated_cost": "3000",
+      "video": "service_videos/WhatsApp_Video_2026-06-10_at_8.45.56_AM.mp4",
+      "created_at": "2026-01-29T18:39:08.909Z",
+      "updated_at": "2026-06-10T03:13:43.829Z"
+    }
+  },
+  {
+    "model": "services.serviceimage",
+    "pk": 1,
+    "fields": {
+      "service": 1,
+      "image": "service_images/360_F_439499737_U723oDptPDtrkguj8pkKL9PvuLJvtRfD_9xgiKqL.jpg",
+      "is_before": true
+    }
+  },
+  {
+    "model": "services.serviceimage",
+    "pk": 2,
+    "fields": {
+      "service": 1,
+      "image": "service_images/EMERALD_COLLECTION.jpeg",
+      "is_before": true
+    }
+  },
+  {
+    "model": "services.serviceimage",
+    "pk": 3,
+    "fields": {
+      "service": 2,
+      "image": "service_images/ring.jpeg",
+      "is_before": true
+    }
+  },
+  {
+    "model": "services.serviceimage",
+    "pk": 4,
+    "fields": {
+      "service": 2,
+      "image": "service_images/Whisk_16b897f7f1b077cbd44489416a814d3fdr.png",
+      "is_before": true
+    }
+  },
+  {
+    "model": "contact.contactinfo",
+    "pk": 2,
+    "fields": {
+      "email": "wpjinadhi@gmail.com",
+      "phone": "0705696254",
+      "address": "Moratuwa"
+    }
+  },
+  {
+    "model": "contact.contacthero",
+    "pk": 1,
+    "fields": {
+      "title": "Get in Touch with Us",
+      "subtitle": "We\u2019re here to answer your questions and bring your jewelry dreams to life",
+      "background_image": "contact_hero/Whisk_ece2c932f8a17b89f3e4f82ab8a60a96dr.png",
+      "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57364.09719019234!2d79.89510952116818!3d6.789688842355045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae245986f16d68b%3A0x92ae9642c5fbf06a!2sRamadia%20Ranmal%20Holiday%20Resort!5e1!3m2!1sen!2slk!4v1769040669347!5m2!1sen!2slk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade"
+    }
+  },
+  {
+    "model": "footer.sociallink",
+    "pk": 1,
+    "fields": {
+      "name": "instagram",
+      "url": "https://www.facebook.com/dinusha.fdo.161",
+      "order": 1
+    }
+  },
+  {
+    "model": "footer.sociallink",
+    "pk": 2,
+    "fields": {
+      "name": "facebook",
+      "url": "https://www.facebook.com/dinusha.fdo.161",
+      "order": 2
+    }
+  },
+  {
+    "model": "footer.sociallink",
+    "pk": 3,
+    "fields": {
+      "name": "linkedin",
+      "url": "https://www.facebook.com/dinusha.fdo.161",
+      "order": 3
+    }
+  },
+  {
+    "model": "footer.sociallink",
+    "pk": 4,
+    "fields": {
+      "name": "youtube",
+      "url": "https://www.facebook.com/dinusha.fdo.161",
+      "order": 4
+    }
+  },
+  {
+    "model": "footer.sociallink",
+    "pk": 5,
+    "fields": {
+      "name": "tiktok",
+      "url": "https://www.facebook.com/dinusha.fdo.161",
+      "order": 6
+    }
+  },
+  {
+    "model": "auctions.auctionpagebackground",
+    "pk": 1,
+    "fields": {
+      "image": "auction_page_background/Whisk_4d40e3fb738797aa85049da529eae22edr.png",
+      "is_active": true
+    }
+  },
+  {
+    "model": "auctions.auctionitem",
+    "pk": 3,
+    "fields": {
+      "name": "Diamond",
+      "image": "auction_items/Whisk_d4490c62a091c40b1864ae12bf658b61dr.png",
+      "description": "werfhgj,mhgdgn cvAfgfgngsdgnSdsfbwerfhgj,mhgdgn cvAfgfgngsdgnSdsfbwerfhgj,mhgdgn cvAfgfgngsdgnSdsfbwerfhgj,mhgdgn cvAfgfgngsdgnSdsfb werfhgj,mhgdgn cvAfgfgngsdgnSdsfb werfhgj,mhgdgn cvAfgfgngsdgnSdsfb",
+      "starting_price": "5000.00",
+      "current_bid": "8000.00",
+      "duration": 10800,
+      "end_time": null,
+      "bid_increment": "500.00",
+      "ending_price": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "auctions.auctionitem",
+    "pk": 4,
+    "fields": {
+      "name": "Envy Ring",
+      "image": "auction_items/Whisk_276c4037a5c944383414cf4b5d1bfd7ddr.png",
+      "description": "fgftghuiahda ouHWHOhd ouHDOUDW ouHWDWUOAD Ihwduh ouHDUOWD ouHDOUed fgftghuiahda ouHWHOhd ouHDOUDW ouHWDWUOAD Ihwduh ouHDUOWD ouHDOUed fgftghuiahda ouHWHOhd ouHDOUDW ouHWDWUOAD Ihwduh ouHDUOWD ouHDOUed fgftghuiahda ouHWHOhd ouHDOUDW ouHWDWUOAD Ihwduh ouHDUOWD ouHDOUed",
+      "starting_price": "8000.00",
+      "current_bid": "9500.00",
+      "duration": 7200,
+      "end_time": null,
+      "bid_increment": "500.00",
+      "ending_price": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "auctions.auctionitem",
+    "pk": 5,
+    "fields": {
+      "name": "Sapphire",
+      "image": "auction_items/ADVERTISEMENT_2.png",
+      "description": "a precious, highly durable gemstone variety of the mineral corundum (aluminum oxide), renowned for its 9/10 hardness on the Mohs scale",
+      "starting_price": "10000.00",
+      "current_bid": "11000.00",
+      "duration": 3600,
+      "end_time": "2026-02-14T18:06:44.188Z",
+      "bid_increment": "500.00",
+      "ending_price": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "auctions.auctionitem",
+    "pk": 6,
+    "fields": {
+      "name": "necklace",
+      "image": "auction_items/Aura_Pendant.png",
+      "description": "A necklace is a versatile piece of jewelry worn around the neck, \r\ndesigned for adornment and often symbolizing love or status",
+      "starting_price": "15000.00",
+      "current_bid": "30000.00",
+      "duration": 7200,
+      "end_time": "2026-03-03T15:33:21.107Z",
+      "bid_increment": "500.00",
+      "ending_price": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "auctions.auctionitem",
+    "pk": 7,
+    "fields": {
+      "name": "ring",
+      "image": "auction_items/Diamond_Ring.png",
+      "description": "python manage.py shell -c \"from django.db import connection; cursor = connection.cursor(); cursor.execute('SELECT name FROM sqlite_master WHERE type=\\'table\\''); print(cursor.fetchall())\"",
+      "starting_price": "20000.00",
+      "current_bid": "26500.00",
+      "duration": 3600,
+      "end_time": "2026-03-03T17:00:35.851Z",
+      "bid_increment": "500.00",
+      "ending_price": "40000.00",
+      "is_active": true
+    }
+  },
+  {
+    "model": "custom.jewelrytype",
+    "pk": 1,
+    "fields": {
+      "name": "ring"
+    }
+  },
+  {
+    "model": "custom.jewelrytype",
+    "pk": 2,
+    "fields": {
+      "name": "Necklaces"
+    }
+  },
+  {
+    "model": "custom.jewelrytype",
+    "pk": 3,
+    "fields": {
+      "name": "Earrings"
+    }
+  },
+  {
+    "model": "custom.jewelrytype",
+    "pk": 4,
+    "fields": {
+      "name": "Bracelets"
+    }
+  },
+  {
+    "model": "custom.gem",
+    "pk": 1,
+    "fields": {
+      "name": "Diamond",
+      "multiplier": 5.0,
+      "image": "gems/Whisk_d4490c62a091c40b1864ae12bf658b61dr.png"
+    }
+  },
+  {
+    "model": "custom.gem",
+    "pk": 2,
+    "fields": {
+      "name": "Emerald Glow",
+      "multiplier": 2.5,
+      "image": "gems/Whisk_db606cc50f4a4d1a87d435231d1d47e7dr.png"
+    }
+  },
+  {
+    "model": "custom.gem",
+    "pk": 3,
+    "fields": {
+      "name": "Crimson Ruby",
+      "multiplier": 2.0,
+      "image": "gems/Whisk_c835eb9bdc4c7f0bed14186b158eb0b8dr.png"
+    }
+  },
+  {
+    "model": "custom.gem",
+    "pk": 4,
+    "fields": {
+      "name": "Midnight Sapphire",
+      "multiplier": 3.0,
+      "image": "gems/Whisk_d123c63a7a2cc97bc2d4677e86618974dr.png"
+    }
+  },
+  {
+    "model": "custom.metal",
+    "pk": 2,
+    "fields": {
+      "name": "Gold",
+      "multiplier": 1.0,
+      "image": "metals/Whisk_9a3857aa4bf7f4ea43f4c7f0ce589824dr.png"
+    }
+  },
+  {
+    "model": "custom.metal",
+    "pk": 3,
+    "fields": {
+      "name": "Platinum",
+      "multiplier": 1.0,
+      "image": "metals/Whisk_4d40e3fb738797aa85049da529eae22edr.png"
+    }
+  },
+  {
+    "model": "custom.metal",
+    "pk": 4,
+    "fields": {
+      "name": "White Gold",
+      "multiplier": 1.0,
+      "image": "metals/Whisk_cbf84893736fa2ba4c8458e47fcea290dr.png"
+    }
+  },
+  {
+    "model": "custom.herosection",
+    "pk": 1,
+    "fields": {
+      "title": "Design Your Dream Jewelry",
+      "subtitle": "Personalized creations crafted with elegance, precision, and love",
+      "image": "hero_images/Whisk_94eeff0fb82e698b0054ab6f137a8530dr.png"
+    }
+  }
+]
