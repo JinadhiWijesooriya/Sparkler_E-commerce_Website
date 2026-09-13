@@ -49,6 +49,4 @@ main → stable, production-ready code
 
 development → active development branch
 
-👤 Author
-Dinusha Fernando
-GitHub: https://github.com/Dinusha-Fernando
+
