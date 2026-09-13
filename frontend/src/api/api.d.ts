@@ -1,0 +1,12 @@
+import * as HomeApi from './homeApi';
+import * as ShopApi from './shopApi';
+import * as ShopSetsApi from './shopSetsApi';
+import * as ServicesApi from './servicesApi';
+import * as FooterApi from './footerApi';
+import * as CustomApi from './customApi';
+import * as ContactApi from './contactApi';
+import * as BlogApi from './blogApi';
+import * as CartApi from './cartApi';
+import * as AuctionsApi from './auctionsApi';
+import * as subscribeToPromotionsApi from './promotionApi';
+export { HomeApi, ShopApi, ShopSetsApi, ServicesApi, FooterApi, CustomApi, ContactApi, BlogApi, CartApi, AuctionsApi, subscribeToPromotionsApi, };

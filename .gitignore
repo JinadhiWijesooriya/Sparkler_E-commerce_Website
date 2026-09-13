@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+*.egg-info/
+
+# Django
+db.sqlite3
+media/
+
+# Secrets — NEVER commit these
+.env
+*.key
+
+# Node
+node_modules/
+dist/
+.cache/

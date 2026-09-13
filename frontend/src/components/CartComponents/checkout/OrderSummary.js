@@ -1,0 +1,11 @@
+"use client";
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Section } from "./CheckoutInputs";
+export default function OrderSummary({ cartItems, country, shipping_cost, tax, total, }) {
+    const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    return (_jsxs(Section, { title: "Order Summary", children: [_jsx("div", { className: "space-y-2", children: cartItems.map((item, idx) => {
+                    // Use the first product image if available
+                    const imageUrl = item.product_images?.[0]?.image;
+                    return (_jsxs("div", { className: `flex items-center justify-between gap-3 p-3 rounded-xl ${idx % 2 === 0 ? "bg-[#1A1A1A]" : "bg-[#141414]"}`, children: [imageUrl && (_jsx("img", { src: imageUrl, alt: item.name, className: "w-14 h-14 rounded-lg object-cover border border-[#C9A24D]/30" })), _jsxs("div", { className: "flex-1 flex flex-col", children: [_jsx("span", { className: "text-sm font-semibold text-[#EDEDED] truncate", children: item.name }), _jsxs("span", { className: "text-xs text-[#BDBDBD]", children: [item.quantity, " \u00D7 $", item.price.toFixed(2)] })] }), _jsxs("div", { className: "text-sm font-semibold text-[#C9A24D]", children: ["LKR.", (item.price * item.quantity).toFixed(2)] })] }, item.id));
+                }) }), _jsxs("div", { className: "border-t border-[#C9A24D]/20 pt-4 space-y-2 mt-4", children: [_jsxs("div", { className: "flex justify-between text-sm text-[#EDEDED]", children: [_jsx("span", { children: "Subtotal" }), _jsxs("span", { children: ["LKR.", subtotal.toFixed(2)] })] }), shipping_cost !== undefined && (_jsxs("div", { className: "flex justify-between text-sm text-[#EDEDED]", children: [_jsxs("span", { children: ["Shipping ", country && `(LKR.{country})`] }), _jsxs("span", { children: ["LKR.", shipping_cost.toFixed(2)] })] })), tax !== undefined && (_jsxs("div", { className: "flex justify-between text-sm text-[#EDEDED]", children: [_jsx("span", { children: "Tax" }), _jsxs("span", { children: ["LKR.", tax.toFixed(2)] })] })), total !== undefined && (_jsxs("div", { className: "flex justify-between text-lg font-bold text-[#C9A24D] border-t border-[#C9A24D]/40 pt-2", children: [_jsx("span", { children: "Total" }), _jsxs("span", { children: ["LKR.", total.toFixed(2)] })] }))] })] }));
+}
