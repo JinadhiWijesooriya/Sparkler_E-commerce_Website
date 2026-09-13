@@ -77,6 +77,8 @@ jobs:
           DB_PORT: 5432
           DEBUG: "True"
           SECRET_KEY: "ci-secret-key-for-testing"
+          STRIPE_PUBLISHABLE_KEY: "pk_test_placeholder"
+          STRIPE_SECRET_KEY: "sk_test_placeholder"
         run: |
           python manage.py test
 

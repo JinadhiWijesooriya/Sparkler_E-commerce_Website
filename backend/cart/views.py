@@ -455,6 +455,8 @@ class VerifyPaymentAPIView(APIView):
                 order.save()
 
                 # Clear original shopping cart
+                if order.cart:
+                    order.cart.items.all().delete()
                 original_cart = get_active_cart(request)
                 original_cart.items.all().delete()
 
