@@ -34,7 +34,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - media_data:/app/media
+      - ./backend/media:/app/media
       - static_data:/app/staticfiles
     depends_on:
       db:
